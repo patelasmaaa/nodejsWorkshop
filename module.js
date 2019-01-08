@@ -7,7 +7,7 @@ module.exports = function(dirname, extension, callback){
 			if(error) return callback(error);
 
 		list.forEach(function(name){
-			if(path.extname(name) === '.' + process.argv[3]){
+			if(path.extname(name) === '.' + extension){
 				//console.log(name);
 				result.push(name);
 			}
